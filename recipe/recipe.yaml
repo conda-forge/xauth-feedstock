@@ -10,7 +10,7 @@ source:
   sha256: a4000e2f441facebf569026bedecc23ba262cc6927be52070abe0002625cfbe0
 
 build:
-  number: 0
+  number: 1
   skip: win
 
 requirements:
@@ -34,7 +34,7 @@ requirements:
 
 tests:
   - script:
-      - xauth -h 2>&1 | grep -q "usage: "xauth \\[-options ...\\] \\[command arg ...\\]\""
+      - "xauth -h 2>&1 | grep -q \"usage: \"xauth \\\\[-options ...\\\\] \\\\[command arg ...\\\\]\\\"\""
 
 about:
   license: MIT
